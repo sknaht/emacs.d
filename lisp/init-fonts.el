@@ -35,5 +35,11 @@ DELTA should be a multiple of 10, in the units used by the
 (global-set-key (kbd "C-M--") 'decrease-default-font-height)
 
 
+;; Setting English Font
+(set-face-attribute
+  'default nil :font "Consolas 14")
+
+;; Chinese Font
+(set-fontset-font t 'han (font-spec :family "Microsoft Yahei"))
 
 (provide 'init-fonts)
